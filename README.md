@@ -19,6 +19,7 @@ Structure
 =============
 
 There are 3 classes used
+
 1. EHMapView subclass of MKMapView ... your main concern
 2. EHMapViewDelegate this is assigned as the delegate to the MKMapView ... you may need to modify this to support more delegates
 3. EHClusteringOperation ... this is were clustering takes place
