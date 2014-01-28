@@ -3,16 +3,16 @@ MapClustering
 
 Group nearby pens in MKMapView to enhance performance
 
-The below example is made on 100,000 pin 
+The below example is made on 100,000 pin. The example works **great** on iPhone 5S and **not bad** on iPad 2
 
 **zoomed out; only few pins appear**
-![zoomed out; only few pins appear](maps1.png)
+![zoomed out; only few pins appear](readMeImages/maps1.png)
 
 **a little zoom in; some pins start to appear**
-![a little zoom in; some pins start to appear](maps2.png)
+![a little zoom in; some pins start to appear](readMeImages/maps2.png)
 
 **a deep zoom in; reveal for even more pins**
-![a deep zoom in; reveal for even more pins](maps3.png)
+![a deep zoom in; reveal for even more pins](readMeImages/maps3.png)
 
 
 Structure
@@ -21,7 +21,7 @@ Structure
 There are 3 classes used
 
 1. EHMapView subclass of MKMapView ... your main concern
-2. EHMapViewDelegate this is assigned as the delegate to the MKMapView ... you may need to modify this to support more delegates
+2. EHMapViewDelegate this is assigned as the delegate to the MKMapView ... you may need to modify this to support more delegate methods from MKMapViewDelegate protocol
 3. EHClusteringOperation ... this is were clustering takes place
 
 
