@@ -1,7 +1,7 @@
 MapClustering
 =============
 
-Group nearby pens in MKMapView to enhance performance
+Group nearby pins in MKMapView to enhance performance
 
 The below example is made on 100,000 pin. The example works **great** on iPhone 5S and **not bad** on iPad 2
 
