@@ -80,10 +80,11 @@
 		[currentAnnotations minusSet:newAnnotations];
 		
 		// Add the Annotation to the map View
+		EHMapView *mapView = self.mapView;
 		dispatch_async(dispatch_get_main_queue(), ^{
-			[self.mapView removeAnnotations:[currentAnnotations allObjects]];
-			[self.mapView addAnnotations:[newAnnotations allObjects]];
-			self.mapView.previousMapRect = visibleRect;
+			[mapView removeAnnotations:[currentAnnotations allObjects]];
+			[mapView addAnnotations:[newAnnotations allObjects]];
+			mapView.previousMapRect = visibleRect;
 		});
 	}
 }

@@ -59,6 +59,13 @@
 	self.allAnnotationsMapView = [[MKMapView alloc] init];
 }
 
+- (void)dealloc
+{
+	self.allAnnotationsMapView = nil;
+	self.mapDelegate = nil;
+	self.operation = nil;
+}
+
 
 #pragma mark - Layout Annotations
 
@@ -90,24 +97,28 @@
 
 - (void)addEHAnnotation:(id<MKAnnotation>)annotation
 {
+	self.previousMapRect = MKMapRectNull;
 	[self.allAnnotationsMapView addAnnotation:annotation];
 	[self layoutAnnotations];
 }
 
 - (void)addEHAnnotations:(NSArray *)annotations
 {
+	self.previousMapRect = MKMapRectNull;
 	[self.allAnnotationsMapView addAnnotations:annotations];
 	[self layoutAnnotations];
 }
 
 - (void)removeEHAnnotation:(id<MKAnnotation>)annotation
 {
+	self.previousMapRect = MKMapRectNull;
 	[self.allAnnotationsMapView removeAnnotation:annotation];
 	[self layoutAnnotations];
 }
 
 - (void)removeEHAnnotations:(NSArray *)annotations
 {
+	self.previousMapRect = MKMapRectNull;
 	[self.allAnnotationsMapView removeAnnotations:annotations];
 	[self layoutAnnotations];
 }
