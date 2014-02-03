@@ -3,7 +3,7 @@ MapClustering
 
 Group nearby pins in MKMapView to enhance performance
 
-The below example is made on 100,000 pin. The example works **great** on iPhone 5S and **not bad** on iPad 2
+The below example is made on 100,000 pin. The example works **great** on iPhone 5S and **good** on iPad 2
 
 **zoomed out; only few pins appear**
 ![zoomed out; only few pins appear](readMeImages/maps1.png)
