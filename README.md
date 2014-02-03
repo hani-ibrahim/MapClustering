@@ -6,12 +6,15 @@ Group nearby pins in MKMapView to enhance performance
 The below example is made on 100,000 pin. The example works **great** on iPhone 5S and **good** on iPad 2
 
 **zoomed out; only few pins appear**
+
 ![zoomed out; only few pins appear](readMeImages/maps1.png)
 
 **a little zoom in; some pins start to appear**
+
 ![a little zoom in; some pins start to appear](readMeImages/maps2.png)
 
 **a deep zoom in; reveal for even more pins**
+
 ![a deep zoom in; reveal for even more pins](readMeImages/maps3.png)
 
 
