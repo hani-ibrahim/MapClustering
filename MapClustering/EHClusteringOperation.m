@@ -89,7 +89,7 @@
 			});
 		}
 		@catch (NSException *exception) {
-			
+			NSLog(@"exception: %@",exception);
 		}
 	}
 }
